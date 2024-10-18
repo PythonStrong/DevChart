@@ -1,0 +1,45 @@
+body {
+    background-color: #f0f2f5;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+      }
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .social-icons a {
+    color: #6c757d;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+  }
+  
+  .google-icon:hover {
+    color: #db4437; /* Google red */
+  }
+  
+  .github-icon:hover {
+    color: #333; /* GitHub black */
+  }
+  
+  .facebook-icon:hover {
+    color: #3b5998; /* Facebook blue */
+  }
+  
+  .more-icon:hover {
+    color: #888; /* Grey for more options */
+  }
+  

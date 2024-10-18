@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar Example</title>
+    <!-- Google Fonts Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="/style/navbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="#" class="logo"><span class="material-icons">home</span></a>
+      </div>
+
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="#"><span class="material-icons">explore</span>Guruhlar Reytingi</a></li>
+        <li><a href="./login.html"><span class="material-icons">assignment</span> Login</a></li>
+        <li><a href="./Sign.html"><span class="material-icons">event</span>Sign</a></li>
+        <li><a href="#"><span class="material-icons">forum</span>Chat</a></li>
+        <li class="dropdown">
+          <a href="#"><span class="material-icons">store</span>Yonalishlar</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Frontend</a></li>
+            <li><a href="#">Backend</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="navbar-right">
+        <a href="#" class="premium-btn">Premium</a>
+        <a href="#" class="profile-icon"><span class="material-icons">account_circle</span></a>
+        <span class="material-icons menu-icon" id="menuIcon">menu</span>
+      </div>
+    </nav>
+
+    <script src="/js/nav.js"></script>
+  </body>
+</html>

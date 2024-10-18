@@ -1,0 +1,144 @@
+
+
+.container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 80px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 330px;
+    height: 170px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    cursor: pointer; 
+}
+
+.card-content {
+    text-align: start;
+    padding-left: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* Increased button text size */
+    text-transform: capitalize; /* Ensures that button text starts with a capital letter */
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Card background colors and images */
+.card:nth-child(1) {
+    background-image: url('path_to_system_design_image.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #2f855a; /* Adds a green background as a fallback */
+}
+
+.card:nth-child(2) {
+    background-image: url('path_to_data_structures_image.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #6b46c1; /* Adds a purple background as a fallback */
+}
+
+.card:nth-child(3) {
+    background-image: url('path_to_interview_questions_image.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #3182ce; /* Adds a blue background as a fallback */
+}
+
+/* Overlay effect */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text readability */
+    z-index: 1;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 250px;
+        height: 140px;
+    }
+
+    .card-content h3 {
+        font-size: 1rem;
+    }
+
+    .card-content button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        height: 160px;
+    }
+
+    .card-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .card-content p {
+        font-size: 0.85rem;
+    }
+
+    .card-content button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+}
